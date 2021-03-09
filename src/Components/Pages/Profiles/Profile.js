@@ -4,12 +4,14 @@ import StarLogo from '../../Images/Star Logo -2.png';
 import Picture from '../../Images/test.png';
 import MaoriLogo from '../../Images/Maori flag.jpg';
 import NZLogo from '../../Images/NZ Flag.jpg';
+import { Button } from '@material-ui/core';
+import Footer from '../Footer/Footer.js';
 
 export default function Profile() {
     return (
-        <div className='Profile'>
+        <div className='Student_Profile'>
             <Navigation />
-            <div id='StudentDiv'>
+            <div id='Student_Div'>
                 <StudentPicture />
                 <StudentDetails />
             </div>
@@ -20,17 +22,17 @@ export default function Profile() {
 
 function Navigation() {
     return (
-        <div id='Navigation'>
-            <img id='TopNavLogo' src={StarLogo} alt='Logo' />
-            <p className='TopNavLabels'>HOME </p>
-            <p className='TopNavLabels'>PROJECTS </p>
-            <p className='TopNavLabels'>TEACHERS </p>
+        <div id='Student_Navigation'>
+            <img id='Student_TopNavLogo' src={StarLogo} alt='Logo' />
+            <p className='Student_TopNavLabels'>HOME </p>
+            <p className='Student_TopNavLabels'>PROJECTS </p>
+            <p className='Student_TopNavLabels'>TEACHERS </p>
 
-            <div id='UserInteraction'>
-                <div id='LanguageControls'>
-                    LANG<img id='MaoriFlag' src={MaoriLogo} alt='Maori Flag'></img><img id='NZFlag' src={NZLogo} alt='NZ Flag'></img>
+            <div id='Student_UserInteraction'>
+                <div id='Student_LanguageControls'>
+                    LANG<img id='Student_MaoriFlag' src={MaoriLogo} alt='Maori Flag'></img><img id='Student_NZFlag' src={NZLogo} alt='NZ Flag'></img>
                 </div>
-                <div id='StudentUsername'><img id='TopNavStudentPicture' src={Picture} alt='Student' />RAWIRI FLETCHER</div>
+                <div id='Student_Username'><img id='Student_TopNavPicture' src={Picture} alt='Student' />RAWIRI FLETCHER</div>
             </div>
         </div>
     );
@@ -38,11 +40,14 @@ function Navigation() {
 
 function StudentPicture() {
     return (
-        <div id='StudentPicture'>
-            <div id='PictureFrame'>
-                <img id='Picture' src={Picture} alt='Student' />
-                <div className='Button'>EDIT PROFILE</div>
+        <div id='Student_PictureParent'>
+            <div id='Student_PictureFrame'>
+                <img id='Student_Picture' src={Picture} alt='Student' />
+                {/*<div className='Button'>EDIT PROFILE</div>
                 <div className='Button'>CHANGE PHOTO</div>
+                
+                    TODO: Replace with Material UI buttons.
+                */}
             </div>
         </div>
     );
@@ -50,11 +55,11 @@ function StudentPicture() {
 
 function StudentDetails() {
     return (
-        <div id='StudentDetails'>
-            <div id='DetailsFrame'>
-                <div id='Details'>
-                    <h1 id='StudentName'>Rawiri Fletcher</h1>
-                    <div id='InformationLabels'>
+        <div id='Student_DetailsParent'>
+            <div id='Student_DetailsFrame'>
+                <div id='Student_Details'>
+                    <h1 id='Student_Name'>Rawiri Fletcher</h1>
+                    <div id='Student_InformationLabels'>
                         <p>School</p>
                         <p>Teacher</p>
                         <p>Course</p>
@@ -62,65 +67,16 @@ function StudentDetails() {
                         <p>Contact No</p>
                         <p>Email Address</p>
                     </div>
-                    <div id='Information'>
-                        <p id='SchoolName'>Homai School</p>
-                        <p id='TeacherName'>Jasmina Salvador</p>
-                        <p id='CourseName'>Beginner</p>
-                        <p id='DateOfBirth'>25 June 2010</p>
-                        <p id='ContactNumber'>022 524 6399</p>
-                        <p id='EmailAddress'>fletchy.r@gmail.com</p>
+                    <div id='Student_Information'>
+                        <p id='Student_SchoolName'>Homai School</p>
+                        <p id='Student_TeacherName'>Jasmina Salvador</p>
+                        <p id='Student_CourseName'>Beginner</p>
+                        <p id='Student_DateOfBirth'>25 June 2010</p>
+                        <p id='Student_ContactNumber'>022 524 6399</p>
+                        <p id='Student_EmailAddress'>fletchy.r@gmail.com</p>
                     </div>
                 </div>
-                <div id='ReturnToProjects'>
-                    BACK TO PROJECTS
-                </div>
-            </div>
-        </div>
-    );
-}
-
-function Footer() {
-    return (
-        <div className='Footer'>
-            <div id='FooterDetails'>
-                <div id='CompanySection'>
-                    <h2>COMPANY</h2>
-                    <p>About Us</p>
-                    <p>Careers</p>
-                    <p>Partners</p>
-                </div>
-                <div id='CourseSection'>
-                    <h2>COURSES</h2>
-                    <p>Register</p>
-                    <p>Login</p>
-                    <p>Projects</p>
-                    <p>Teachers</p>
-                    <p>Parents</p>
-                    <p>Resources</p>
-                </div>
-                <div id='SupportSection'>
-                    <h2>SUPPORT</h2>
-                    <p>FAQs</p>
-                    <p>Helpdesk</p>
-                    <p>Contact Us</p>
-                </div>
-                <div id='LegalSection'>
-                    <h2>LEGAL</h2>
-                    <p>Terms & Conditions</p>
-                    <p>Privacy Policy</p>
-                </div>
-                <div id='AboutSection'>
-                    <h2>LevelUp Works</h2>
-                    <p>
-                        LevelUp Works is an Auckland-based enterprise<br />
-                        dedicated to developing game-based learning<br />
-                        software to help teachers in response to the<br />
-                        New Zealand Digital Technologies & Hangarau<br />
-                        Matihiko.<br />
-                        alan@levelupworks.com<br />
-                        (021) 668 185
-                    </p>
-                </div>
+                <Button className='Global_Buttons' id='Student_RTPButton'>RETURN TO PROJECTS</Button>
             </div>
         </div>
     );
