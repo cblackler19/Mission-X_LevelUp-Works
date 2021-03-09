@@ -1,0 +1,26 @@
+h1 {
+    font-size: 160px;
+}
+
+#Message {
+    margin-top: -120px;
+    font-size: large;
+}
+
+#PageNotFound {
+    margin-top: 300px;
+}
+
+#Error {
+    font-size: small;
+}
+
+#ReturnButton {
+    background-color: #43C0F6;
+    color: white;
+    margin-left: 900px;
+    margin-right: 900px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
