@@ -40,14 +40,11 @@ function Navigation() {
 
 function StudentPicture() {
     return (
-        <div id='Student_PictureParent'>
+        <div className='Student_DetailsPictureParent'>
             <div id='Student_PictureFrame'>
                 <img id='Student_Picture' src={Picture} alt='Student' />
-                {/*<div className='Button'>EDIT PROFILE</div>
-                <div className='Button'>CHANGE PHOTO</div>
-                
-                    TODO: Replace with Material UI buttons.
-                */}
+                <Button className='Student_GlobalButtons' id='Student_EditProfileButton'>EDIT PROFILE</Button>
+                <Button className='Student_GlobalButtons' id='Student_ChangePhotoButton'>CHANGE PHOTO</Button>
             </div>
         </div>
     );
@@ -55,7 +52,7 @@ function StudentPicture() {
 
 function StudentDetails() {
     return (
-        <div id='Student_DetailsParent'>
+        <div className='Student_DetailsPictureParent'>
             <div id='Student_DetailsFrame'>
                 <div id='Student_Details'>
                     <h1 id='Student_Name'>Rawiri Fletcher</h1>

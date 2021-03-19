@@ -67,9 +67,9 @@ body {
     border-radius: 25px;
     width: 310px;
     height: 460px;
+    border-style: solid;
     margin-top: 125px;
     margin-left: 470px;
-    border-style: solid;
 }
 
 #Student_Picture {
@@ -122,6 +122,18 @@ body {
     background-color: #F91C85;
     border-radius: 7px;
 }
+
+#Student_EditProfileButton {
+    color: #43C0F6;
+    font-weight: 700;
+}
+
+#Student_ChangePhotoButton {
+    color: #43C0F6;
+    font-weight: 700;
+    
+}
+
 
 /*
 
@@ -236,7 +248,3 @@ body {
     applied to both Profile.js & TeacherProfile.js
 
 */
-
-.Global_Buttons {
-    
-}
